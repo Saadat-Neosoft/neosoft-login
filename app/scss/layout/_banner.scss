@@ -1,0 +1,18 @@
+.banner {
+  background: $color-primary;
+  height: 44px;
+  // width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__discount {
+    color: white;
+    // font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+}

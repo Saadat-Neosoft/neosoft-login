@@ -1,0 +1,16 @@
+.copyright-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-primary;
+  height: 53px;
+  width: 1440px;
+
+  &__text {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-style: normal;
+  }
+}

@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 45px;
+  padding-top: 17px;
+
+  &__title {
+    color: $color-primary;
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-left: 100px;
+    text-decoration: none;
+  }
+}
