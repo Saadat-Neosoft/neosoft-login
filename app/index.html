@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NeoStore</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- DISCOUNT BANNER -->
-    <!-- <div class="banner">
-      <p class="banner__discount">MARKDOWNS: UP TO 70% OFF SHOP NOW</p>
-    </div> -->
-    <!-- <div class="header">
-      <p class="header__title">NeoSTORE</p>
-    </div> -->
-
-    <!-- HEADER -->
-    <header>
-      <div class="banner">
-        <a href="/discount-page" class="banner__discount"
-          >MARKDOWNS: UP TO 70% OFF SHOP NOW</a
-        >
-      </div>
-      <div class="header">
-        <a href="/neostore" class="header__title">NeoSTORE</a>
-      </div>
-    </header>
-    <!-- HERO CONTAINER -->
-    <!-- <div class="hero-container"> -->
-    <!-- HERO CONTAINER LEFT  -->
-    <!-- <div class="hero-container__left">
-        <img
-          class="hero-container__left__image"
-          src="./assets/pana.png"
-          alt=""
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NeoStore</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
         />
-      </div> -->
-    <!-- HERO CONTAINER RIGHT  -->
-    <!-- <div class="hero-container__right"> -->
-    <!-- CARD  -->
-    <!-- <div class="hero-container__right-card"> -->
-    <!-- INPUT EMAIL -->
-    <!-- <p class="hero-container__right-card__title">LOG IN</p>
-          <div class="hero-container__right-card__input">
-            <p class="hero-container__right-card__input__title">Email</p>
-            <input
-              class="hero-container__right-card__input__title__email"
-              type="email"
-              placeholder="youremail@address.com"
-            />
-          </div> -->
-    <!-- INPUT PASSWORD -->
-    <!-- <div class="hero-container__right-card__input">
-            <p class="hero-container__right-card__input__title">Password</p>
-            <input type="password" placeholder="••••••••••••" />
-          </div> -->
-    <!-- FORGOT PASSWORD -->
-    <!-- <p class="hero-container__right-card__forgot-password">
-            Forgot password
-          </p> -->
-    <!-- CONTINUE BUTTON -->
-    <!-- <div class="hero-container__right-card__btn">
-            <p class="hero-container__right-card__btn__text">Continue</p>
-          </div> -->
-    <!-- SIGNUP LINK -->
-    <!-- <div>
-            <p class="hero-container__right-card__signup">
-              New to NeoSTORE?
-              <span class="hero-container__right-card__signup-btn"
-                >Sign up</span
-              >
-            </p>
-          </div>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+        ></script>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <a href="/discount-page" class="header__flash-sale"
+                >MARKDOWNS: UP TO 70% OFF SHOP NOW</a
+            >
+            <div class="container">
+                <a href="/neostore" class="header__title">NeoSTORE</a>
+            </div>
+        </header>
+
+        <main class="hero">
+            <div class="hero__left">
+                <img
+                    class="lozad hero__left__image"
+                    data-src="./assets/pana.png"
+                    alt="two-factor-auth-image"
+                    loading="lazy"
+                    height="382.78px"
+                    width="340.64px"
+                />
+            </div>
+
+            <div class="hero__right">
+                <form
+                    action="/login-form"
+                    method="post"
+                    class="hero__right__form"
+                >
+                    <span class="hero__right__form-header">LOGIN</span>
+                    <label for="loginEmail" class="hero__right__form-label"
+                        >Email</label
+                    >
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        class="hero__right__form-control"
+                    />
+                    <label for="loginEmail" class="hero__right__form-label"
+                        >Password</label
+                    >
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        class="hero__right__form-control"
+                    />
+                    <a class="hero__right__form__forgot-password"
+                        >Forgot password</a
+                    >
+                    <button class="hero__right__form-btn">Continue</button>
+                    <span class="hero__right__form-signup">
+                        New to NeoSTORE?
+                        <a href="/signup" class="hero__right__form-signup-btn"
+                            >Sign up</a
+                        >
+                    </span>
+                </form>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <!-- <div class="footer"> -->
+        <!-- FOOTER LEFT -->
+        <!-- <div class="footer__left">
+      <p class="header__title">NeoSTORE</p> -->
+        <!-- SUBSCRIBE -->
+        <!-- <div class="footer__left__subscribe">
+        <img src="./assets/icon_mail.svg" alt="" />
+        <input type="email" placeholder="Your email address" />
+        <div class="footer__left__subscribe-btn">
+          <p class="footer__left__subscribe-btn__text">subscribe</p>
         </div>
-      </div>
-    </div> -->
-    <!-- FOOTER -->
-    <!-- <div class="footer"> -->
-    <!-- FOOTER LEFT -->
-    <!-- <div class="footer__left">
-        <p class="header__title">NeoSTORE</p> -->
-    <!-- SUBSCRIBE -->
-    <!-- <div class="footer__left__subscribe">
-          <img src="./assets/icon_mail.svg" alt="" />
-          <input type="email" placeholder="Your email address" />
-          <div class="footer__left__subscribe-btn">
-            <p class="footer__left__subscribe-btn__text">subscribe</p>
-          </div>
-        </div> -->
-    <!-- CONTACT -->
-    <!-- <div class="footer__left__contact">
-          <p class="footer__left__contact__info">Contact Info</p> -->
-    <!-- NUMBER -->
-    <!-- <p class="footer__left__contact__number">
+      </div> -->
+        <!-- CONTACT -->
+        <!-- <div class="footer__left__contact">
+        <p class="footer__left__contact__info">Contact Info</p> -->
+        <!-- NUMBER -->
+        <!-- <p class="footer__left__contact__number">
             +91 12345 67890 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; +91
             12345 67890
           </p> -->
-    <!-- ADDRESS -->
-    <!-- <p class="footer__left__contact__address">
-            17 Princess Road, London, Greater London NW1 8JR, UK
-          </p>
-        </div> -->
-    <!-- SOCIAL MEDIA ICONS -->
-    <!-- <div class="footer__left__contact__icons">
-          <img src="./assets/icon_facebook.svg" alt="facebook-icon" />
-          <img src="./assets/icon_instagram.svg" alt="instagram-icon" />
-          <img src="./assets/icon_twitter.svg" alt="twitter-icon" />
-        </div>
-      </div> -->
-    <!-- FOOTER RIGHT -->
-    <!-- <div class="footer__right">
-        <div class="footer__right__quick-links">
-          <div class="footer__right__quick-links__list">
+        <!-- ADDRESS -->
+        <!-- <p class="footer__left__contact__address">
+      17 Princess Road, London, Greater London NW1 8JR, UK
+    </p>
+  </div> -->
+        <!-- SOCIAL MEDIA ICONS -->
+        <!-- <div class="footer__left__contact__icons">
+    <img src="./assets/icon_facebook.svg" alt="facebook-icon" />
+    <img src="./assets/icon_instagram.svg" alt="instagram-icon" />
+    <img src="./assets/icon_twitter.svg" alt="twitter-icon" />
+  </div>
+</div> -->
+        <!-- FOOTER RIGHT -->
+        <!-- <div class="footer__right">
+  <div class="footer__right__quick-links">
+    <div class="footer__right__quick-links__list">
             <p class="footer__right__quick-links__list__title">Categories</p>
             <div class="footer__right__quick-links__list__list-item">
               <a href="">Popular</a>
@@ -156,9 +156,10 @@
         </div>
       </div>
     </div> -->
-    <!-- COPYRIGHT BANNER -->
-    <!-- <div class="copyright-banner">
+        <!-- COPYRIGHT BANNER -->
+        <!-- <div class="copyright-banner">
       <p class="copyright-banner__text">©Neostore - All Rights Reserved</p>
     </div> -->
-  </body>
+        <script src="./index.js"></script>
+    </body>
 </html>

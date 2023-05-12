@@ -1,0 +1,108 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    height: 583px;
+    padding-bottom: 33px;
+
+    &__left {
+        padding-top: 82.32px;
+        padding-left: 279.71px;
+        padding-right: 120.78px;
+
+        &__image {
+            height: 382.78px;
+            width: 340.64;
+        }
+    }
+
+    &__right {
+        // margin-top: -6px;
+        padding-left: 33px;
+        padding-right: 77px;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 66px 40px;
+            box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.06);
+            border-radius: 20px;
+
+            &-header {
+                color: $color-primary;
+                height: 23px;
+                width: 89px;
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 22.97px;
+                text-transform: uppercase;
+                margin-bottom: 77px;
+            }
+
+            &-label {
+                color: #666666;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 13px;
+                margin-bottom: 13px;
+                align-self: flex-start;
+                margin-bottom: 11px;
+                padding-top: 7px;
+            }
+
+            &-control {
+                width: 372px;
+                height: 20px;
+                border-radius: 6px;
+                border: 0.8px solid #c2c2c2;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 15px;
+                margin-bottom: 9px;
+            }
+
+            &__forgot-password {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                text-decoration-line: underline;
+                color: #585858;
+                align-self: flex-end;
+                margin-bottom: 51px;
+            }
+
+            &-btn {
+                height: 36px;
+                width: 271px;
+                background: $color-primary;
+                border-radius: 2px;
+                border: none;
+                margin-bottom: 39px;
+                color: #fff;
+                font-weight: 500;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            &-signup {
+                color: #4f4f4f;
+                font-family: "Montserrat";
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 17px;
+            }
+            &-signup-btn {
+                color: #4f4f4f;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 19px;
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
