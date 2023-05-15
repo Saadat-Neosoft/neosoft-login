@@ -4,21 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>NeoStore</title>
+        <title>Login | NeoStore</title>
+        <link href="https://be.1-thing.in/favicon.png" rel="shortcut icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
-
+        <link rel="stylesheet" href="./css/styles.css" />
         <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+            defer
         ></script>
-        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="index.js" defer></script>
     </head>
     <body>
+        <!-- HEADER -->
         <header>
             <a href="/discount-page" class="header__flash-sale"
                 >MARKDOWNS: UP TO 70% OFF SHOP NOW</a
@@ -27,7 +30,7 @@
                 <a href="/neostore" class="header__title">NeoSTORE</a>
             </div>
         </header>
-
+        <!-- HERO -->
         <main class="hero">
             <div class="hero__left">
                 <img
@@ -54,6 +57,7 @@
                         type="email"
                         id="loginEmail"
                         class="hero__right__form-control"
+                        placeholder="youremail@address.com"
                     />
                     <label for="loginEmail" class="hero__right__form-label"
                         >Password</label
@@ -62,11 +66,16 @@
                         type="password"
                         id="loginPassword"
                         class="hero__right__form-control"
+                        placeholder="••••••••••••"
                     />
-                    <a class="hero__right__form__forgot-password"
+                    <a
+                        href="/forgot-password"
+                        class="hero__right__form__forgot-password"
                         >Forgot password</a
                     >
-                    <button class="hero__right__form-btn">Continue</button>
+                    <button type="submit" class="hero__right__form-btn">
+                        Continue
+                    </button>
                     <span class="hero__right__form-signup">
                         New to NeoSTORE?
                         <a href="/signup" class="hero__right__form-signup-btn"
@@ -77,89 +86,146 @@
             </div>
         </main>
         <!-- FOOTER -->
-        <!-- <div class="footer"> -->
-        <!-- FOOTER LEFT -->
-        <!-- <div class="footer__left">
-      <p class="header__title">NeoSTORE</p> -->
-        <!-- SUBSCRIBE -->
-        <!-- <div class="footer__left__subscribe">
-        <img src="./assets/icon_mail.svg" alt="" />
-        <input type="email" placeholder="Your email address" />
-        <div class="footer__left__subscribe-btn">
-          <p class="footer__left__subscribe-btn__text">subscribe</p>
-        </div>
-      </div> -->
-        <!-- CONTACT -->
-        <!-- <div class="footer__left__contact">
-        <p class="footer__left__contact__info">Contact Info</p> -->
-        <!-- NUMBER -->
-        <!-- <p class="footer__left__contact__number">
-            +91 12345 67890 &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; +91
-            12345 67890
-          </p> -->
-        <!-- ADDRESS -->
-        <!-- <p class="footer__left__contact__address">
-      17 Princess Road, London, Greater London NW1 8JR, UK
-    </p>
-  </div> -->
-        <!-- SOCIAL MEDIA ICONS -->
-        <!-- <div class="footer__left__contact__icons">
-    <img src="./assets/icon_facebook.svg" alt="facebook-icon" />
-    <img src="./assets/icon_instagram.svg" alt="instagram-icon" />
-    <img src="./assets/icon_twitter.svg" alt="twitter-icon" />
-  </div>
-</div> -->
-        <!-- FOOTER RIGHT -->
-        <!-- <div class="footer__right">
-  <div class="footer__right__quick-links">
-    <div class="footer__right__quick-links__list">
-            <p class="footer__right__quick-links__list__title">Categories</p>
-            <div class="footer__right__quick-links__list__list-item">
-              <a href="">Popular</a>
-              <a href="">Chair</a>
-              <a href="">Table</a>
-              <a href="">Sofa</a>
-              <a href="">Cupboard</a>
-              <a href="">Lamp</a>
+        <footer class="footer">
+            <!-- FOOTER CONTAINER -->
+            <div class="footer__container">
+                <div class="footer__container__contact-us">
+                    <span class="footer__container__contact-us__title"
+                        >NeoSTORE</span
+                    >
+
+                    <form
+                        action="/email-subscription"
+                        method="post"
+                        class="footer__container__contact-us__subscribe"
+                    >
+                        <img src="./assets/icon_mail.svg" alt="email-icon" />
+                        <input type="email" placeholder="Your email address" />
+                        <button
+                            type="submit"
+                            class="footer__container__contact-us__subscribe-btn"
+                        >
+                            subscribe
+                        </button>
+                    </form>
+
+                    <div class="footer__container__contact-us__contact">
+                        <span
+                            class="footer__container__contact-us__contact__info"
+                        >
+                            Contact Info
+                        </span>
+
+                        <span
+                            class="footer__container__contact-us__contact__number"
+                        >
+                            <span> +91 12345 67890 </span>
+                            <span>|</span>
+                            <span> +91 12345 67890 </span>
+                        </span>
+
+                        <p
+                            class="footer__container__contact-us__contact__address"
+                        >
+                            17 Princess Road, London, Greater London NW1 8JR, UK
+                        </p>
+                    </div>
+
+                    <div class="footer__container__contact-us__contact__icons">
+                        <a href="/facebook">
+                            <img
+                                src="./assets/icon_facebook.svg"
+                                alt="facebook-icon"
+                                title="Facebook"
+                            />
+                        </a>
+                        <a href="/instagram">
+                            <img
+                                src="./assets/icon_instagram.svg"
+                                alt="instagram-icon"
+                                title="Instagram"
+                            />
+                        </a>
+                        <a href="/twitter">
+                            <img
+                                src="./assets/icon_twitter.svg"
+                                alt="twitter-icon"
+                                title="Twitter"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <!-- QUICK LINKS -->
+                <div class="footer__container__quick-links">
+                    <div class="footer__container__quick-links__list">
+                        <span
+                            class="footer__container__quick-links__list__title"
+                        >
+                            Categories
+                        </span>
+                        <div
+                            class="footer__container__quick-links__list__list-item"
+                        >
+                            <a href="/">Popular</a>
+                            <a href="/">Chair</a>
+                            <a href="/">Table</a>
+                            <a href="/">Sofa</a>
+                            <a href="/">Cupboard</a>
+                            <a href="/">Lamp</a>
+                        </div>
+                    </div>
+                    <div class="footer__container__quick-links__list">
+                        <span
+                            class="footer__container__quick-links__list__title"
+                        >
+                            Customer Service
+                        </span>
+                        <div
+                            class="footer__container__quick-links__list__list-item"
+                        >
+                            <a href="/">My Account</a>
+                            <a href="/">Discount</a>
+                            <a href="/">Returns</a>
+                            <a href="/">Orders History</a>
+                            <a href="/">Order Tracking</a>
+                        </div>
+                    </div>
+                    <div class="footer__container__quick-links__list">
+                        <span
+                            class="footer__container__quick-links__list__title"
+                        >
+                            Furniture
+                        </span>
+                        <div
+                            class="footer__container__quick-links__list__list-item"
+                        >
+                            <a href="/">Living Room Furniture</a>
+                            <a href="/">Bar Furniture</a>
+                            <a href="/">Bedroom Furniture</a>
+                            <a href="/">Kids Furniture</a>
+                            <a href="/">Accent Furniture</a>
+                            <a href="/">Book Shelves</a>
+                        </div>
+                    </div>
+                    <div class="footer__container__quick-links__list">
+                        <span
+                            class="footer__container__quick-links__list__title"
+                        >
+                            Useful Links
+                        </span>
+                        <div
+                            class="footer__container__quick-links__list__list-item"
+                        >
+                            <a href="/">Promotions</a>
+                            <a href="/">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer__right__quick-links__list">
-            <p class="footer__right__quick-links__list__title">
-              Customer Service
-            </p>
-            <div class="footer__right__quick-links__list__list-item">
-              <a href="">My Account</a>
-              <a href="">Discount</a>
-              <a href="">Returns</a>
-              <a href="">Orders History</a>
-              <a href="">Order Tracking</a>
-            </div>
-          </div>
-          <div class="footer__right__quick-links__list">
-            <p class="footer__right__quick-links__list__title">Furniture</p>
-            <div class="footer__right__quick-links__list__list-item">
-              <a href="">Living Room Furniture</a>
-              <a href="">Bar Furniture</a>
-              <a href="">Bedroom Furniture</a>
-              <a href="">Kids Furniture</a>
-              <a href="">Accent Furniture</a>
-              <a href="">Book Shelves</a>
-            </div>
-          </div>
-          <div class="footer__right__quick-links__list">
-            <p class="footer__right__quick-links__list__title">Useful Links</p>
-            <div class="footer__right__quick-links__list__list-item">
-              <a href="">Promotions</a>
-              <a href="">Sitemap</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-        <!-- COPYRIGHT BANNER -->
-        <!-- <div class="copyright-banner">
-      <p class="copyright-banner__text">©Neostore - All Rights Reserved</p>
-    </div> -->
-        <script src="./index.js"></script>
+            <!-- COPYRIGHT -->
+            <span class="footer__copyright">
+                ©Neostore - All Rights Reserved
+            </span>
+        </footer>
     </body>
 </html>

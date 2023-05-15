@@ -6,19 +6,13 @@
 
     &__left {
         padding-top: 82.32px;
-        padding-left: 279.71px;
+        padding-left: 261px;
         padding-right: 120.78px;
-
-        &__image {
-            height: 382.78px;
-            width: 340.64;
-        }
     }
 
     &__right {
-        // margin-top: -6px;
         padding-left: 33px;
-        padding-right: 77px;
+        padding-right: 120px;
 
         &__form {
             display: flex;
@@ -72,6 +66,7 @@
                 color: #585858;
                 align-self: flex-end;
                 margin-bottom: 51px;
+                cursor: pointer;
             }
 
             &-btn {
@@ -85,6 +80,10 @@
                 font-weight: 500;
                 font-size: 14px;
                 cursor: pointer;
+
+                &:hover {
+                    background: lighten($color: $color-primary, $amount: 5);
+                }
             }
 
             &-signup {
@@ -102,6 +101,10 @@
                 line-height: 19px;
                 text-decoration-line: underline;
                 cursor: pointer;
+
+                &:hover {
+                    color: lighten($color: #4f4f4f, $amount: 15);
+                }
             }
         }
     }
